@@ -1,3 +1,4 @@
+const { analysis_code } = require("./analysis");
 const fs = require('fs');
 
 fs.readFile('./snippet.txt.py', 'utf-8', (err, data) => {
@@ -5,5 +6,5 @@ fs.readFile('./snippet.txt.py', 'utf-8', (err, data) => {
           console.error("Error reading file:", err);
           return;
      }
-     console.log(data);
+     analysis_code(data);
 });
