@@ -1,4 +1,7 @@
 {
      "name": "javascript-markdown",
-     "type": "commonjs"
+     "type": "commonjs",
+     "scripts": {
+          "dev":"node read.js"
+     }
 }
