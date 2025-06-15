@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>MARKDOWN</title>
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+
+          .code-block {
+               background-color: rgb(65, 65, 65);
+               height: auto;
+               width: 70%;
+               display: grid;
+               grid-template-columns: 50px 1fr;
+               color: white;
+               font-family: monospace;
+               padding: 10px;
+               border-radius: 8px;
+               overflow: auto;
+               max-width: 600px;
+          }
+
+          .line-numbers {
+               text-align: right;
+               padding-right: 10px;
+               user-select: none;
+               opacity: 0.6;
+          }
+
+          .line-numbers div,
+          .code-content div {
+               padding: 2px 0;
+               line-height: 1.5;
+          }
+
+          .code-content {
+               padding-left: 10px;
+          }
+
+          /* Python functions css styling */
+          .py-comment { color: #6A9955; }
+          .py-keyword { color: #C586C0; font-weight: bold; }
+          .py-string { color: #CE9178; }
+          .py-function-declaration { color: #DCDCAA; }
+          .py-function-name { color: #569CD6; }
+          .py-class-name { color: #4EC9B0; font-weight: bold; }
+          .py-fstring { color: #9CDCFE; }
+          .py-variable { color: #9CDCFE; }
+          .py-number { color: #B5CEA8; }
+          .py-operator { color: #D4D4D4; }
+     </style>
+</head>
+
+<body>
+     <div class="code-block">
+          <div class="line-numbers">
+               <div>1</div>
+               <div>2</div>
+               <div>3</div>
+               <div>4</div>
+          </div>
+          <div class="code-content">
+               <div><span class="py-function-declaration">def</span> <span class="py-function-name">greetings</span>(<span class="py-variable">name</span>:<span class="py-keyword">str</span>):</div>
+               <div><pre>     <span class="py-variable">grt_</span>:<span class="py-keyword">str</span> = <span class="py-fstring">f</span><span class="py-string">"Greetings, {name}"</span></pre></div>
+               <div><pre>     <span class="py-comment"># more code here</span></pre></div>
+               <div><pre>     <span class="py-keyword">return</span> <span class="py-variable">grt_</span></pre></div>
+          </div>
+     </div>
+
+</body>
+
+</html>
